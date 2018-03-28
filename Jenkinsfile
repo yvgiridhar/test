@@ -8,5 +8,10 @@ pipeline {
 '''
       }
     }
+    stage('deploy') {
+      steps {
+        sh 'git push heroku master'
+      }
+    }
   }
 }
