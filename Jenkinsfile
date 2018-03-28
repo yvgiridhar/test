@@ -18,7 +18,11 @@ pipeline {
         CI = 'true'
       }
       steps {
+<<<<<<< HEAD
         sh 'npm test'
+=======
+        sh './scripts/test.sh'
+>>>>>>> b9d500d2ae03679a6969cab34daa5a37eb7a58e4
       }
     }
     stage('Deliver') {
