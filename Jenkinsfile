@@ -1,4 +1,5 @@
 pipeline {
+<<<<<<< HEAD
   agent {
     docker {
       image 'node:6-alpine'
@@ -29,3 +30,21 @@ pipeline {
     }
   }
 }
+=======
+  agent any
+  stages {
+    stage('TEST') {
+      steps {
+        sh '''jmeter -n -t /home/dilip/Desktop/testScripts/TestGit/jmet.jmx -l log.jtl
+
+'''
+      }
+    }
+    stage('deploy') {
+      steps {
+        sh 'git push heroku master'
+      }
+    }
+  }
+}
+>>>>>>> 8344dfa5eb87f11ee7afcad0a86219a24d5bee33
