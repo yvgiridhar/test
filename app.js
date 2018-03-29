@@ -7,7 +7,7 @@ app.get('/', function(req, res){
 });
 
 var server = app.listen(3000, function(){
-  console.log('Magic iis happefasing on port 3000');
+  console.log('Magic iis happefasing onx port 3000');
 });
 
 exports.closeServer = function(){
