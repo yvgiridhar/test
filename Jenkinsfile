@@ -19,7 +19,7 @@ pipeline {
         }
           stage('jmeter Test') {
             steps {
-                sh "npm ptest"
+                sh "apache-jmeter-4.0/bin/jmeter -version"
             }
         }
 
