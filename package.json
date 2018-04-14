@@ -10,8 +10,7 @@
     "jasmine-node": "^1.14.5"
   },
   "scripts": {
-    "test": "jasmine-node spec",
-    "ptest":"./jmeter -n -t ptest.jmx"
+    "test": "jasmine-node spec"
   },
   "author": "",
   "license": "ISC"
