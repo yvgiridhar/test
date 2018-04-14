@@ -19,7 +19,7 @@ pipeline {
         }
           stage('jmeter Test') {
             steps {
-                sh "jmeter"
+                sh "npm ptest"
             }
         }
 
