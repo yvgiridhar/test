@@ -17,6 +17,11 @@ pipeline {
                 sh "echo 'Deployment success'"
             }
         }
+          stage('jmeter Test') {
+            steps {
+                sh "jmeter"
+            }
+        }
 
     }
 }
