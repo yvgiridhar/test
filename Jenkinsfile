@@ -17,11 +17,6 @@ pipeline {
                 sh "echo 'Deployment success'"
             }
         }
-           stage('jmeterTest') {
-            steps {
-                sh "jmeter -v
-"
-            }
-        }
+
     }
 }
